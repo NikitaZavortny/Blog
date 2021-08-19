@@ -1,0 +1,34 @@
+﻿@model List<MyBlog.Models.State>;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@User.IsInRole("Administrator")</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">to my website!!!</a>.</p>
+    <div class="jumbotron">
+        <style>
+            #suka {
+                float: left;
+                margin-right: 50px;
+            }
+
+            #yellowFuck {
+                background-color: yellow;
+                border-color: black;
+            }
+        </style>
+        @foreach (var i in Model)
+        {
+            <div class="col-md-7">
+                <h4><p>@i.CreationDate.Day/@i.CreationDate.Month/@i.CreationDate.Year<a>@Html.ActionLink(i.Name, "Index", "Content", new { id = i.Id })</a>      <a>@Html.ActionLink("Delete", "Delete", "Content", new { id = i.Id })</a></p></h4>
+
+                <p class="text-justify">
+                    @i.PreContent
+                </p>
+                <p></p>
+            </div>
+        }
+    </div>
+</div>
