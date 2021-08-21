@@ -22,7 +22,7 @@
         @foreach (var i in Model)
         {
             <div class="col-md-7">
-                <h4><p>@i.CreationDate.Day/@i.CreationDate.Month/@i.CreationDate.Year<a>@Html.ActionLink(i.Name, "Index", "Content", new { id = i.Id })</a>      <a>@Html.ActionLink("Delete", "Delete", "Content", new { id = i.Id })</a></p></h4>
+                <h4><p>@i.CreationDate.Day/@i.CreationDate.Month/@i.CreationDate.Year<a>@Html.ActionLink(i.Name, "Index", "Content", new { id = i.Id })</a>      <a>@Html.ActionLink("Delete", "Delete", "Content", new { id = i.Id })</a>      <a>@Html.ActionLink("Edit", "EditState", "Content", new { id = i.Id })</a></p></h4>
 
                 <p class="text-justify">
                     @i.PreContent

@@ -164,3 +164,4 @@ C:\Users\Никита\source\repos\MyBlog\MyBlog\bin\Debug\netcoreapp3.1\zh-Hans
 C:\Users\Никита\source\repos\MyBlog\MyBlog\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Никита\source\repos\MyBlog\MyBlog\obj\Debug\netcoreapp3.1\Razor\Views\Content\AddState.cshtml.g.cs
 C:\Users\Никита\source\repos\MyBlog\MyBlog\obj\Debug\netcoreapp3.1\Razor\Views\Content\Index.cshtml.g.cs
+C:\Users\Никита\source\repos\MyBlog\MyBlog\obj\Debug\netcoreapp3.1\Razor\Views\Content\EditState.cshtml.g.cs
